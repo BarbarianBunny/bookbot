@@ -19,6 +19,7 @@ def print_book_report(book_name, word_count, character_counts):
     for key, value in sorted(character_counts.items()):
         if key in string.digits:
             print(f"The '{key}' character was found {value} times")
+    print("\n--- End Report ---")
 
 def get_character_counts(text):
     text = text.lower()
